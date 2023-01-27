@@ -98,9 +98,6 @@ jobs:
       - name: Get the archive from the url.
         run: curl -OL ${{ env.ROC_RELEASE_URL }}
         
-      - name: test
-        run: pwd && ls -lah && echo ".." && ls -lah ../
-
       - name: decompress the tar
         run: ls | grep "roc_nightly.*tar\.gz" | xargs tar -xzvf
 
