@@ -11,6 +11,9 @@ RELEASE_URL=$(./ci/get_latest_release_url.sh $1)
 # get the archive from the url
 curl -OL $RELEASE_URL
 
+# test
+pwd && ls -lah && echo '..' && ls ls -lah ../
+
 # decompress the tar
 ls | grep "roc_nightly.*tar\.gz" | xargs tar -xzvf
 
