@@ -12,7 +12,6 @@ RELEASE_URL=$(./ci/get_latest_release_url.sh $1)
 curl -OL $RELEASE_URL
 
 # test
-pwd && ls -lah && echo '..' && ls ls -lah ../
 cd ..
 
 # decompress the tar
