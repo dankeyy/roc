@@ -107,7 +107,7 @@ jobs:
       - name: rename nightly folder
         run: mv roc_nightly* roc_nightly
 
-      - run: git clone https://github.com/roc-lang/basic-cli.git
+      - run: git clone https://github.com/dankeyy/basic-cli.git
 
       - name: Download the previously uploaded files
         uses: actions/download-artifact@v3
