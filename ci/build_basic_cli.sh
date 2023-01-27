@@ -13,6 +13,7 @@ curl -OL $RELEASE_URL
 
 # test
 pwd && ls -lah && echo '..' && ls ls -lah ../
+cd ..
 
 # decompress the tar
 ls | grep "roc_nightly.*tar\.gz" | xargs tar -xzvf
